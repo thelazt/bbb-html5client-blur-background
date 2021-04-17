@@ -4,7 +4,7 @@ Meteor client customization to support [BodyPix](https://github.com/tensorflow/t
 
 To apply the patch, just run
 
-	./patcher.sh
+	./patch.sh
 	bbb-conf --restart
 
 on your *BigBlueButton* instance -- this modifies the files
