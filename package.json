@@ -1,0 +1,28 @@
+{
+  "name": "bbb-background-blur",
+  "version": "1.0.0",
+  "description": "Dependencies for body pix based backgorund blur",
+  "keywords": [],
+  "private": true,
+  "engines": {
+    "node": ">=6.3.0",
+    "npm": ">=3.10.5"
+  },
+  "scripts": {
+    "dist:js": "mkdir -p dist && gulp copy:dist",
+    "dist:css": "mkdir -p dist/tippy.js/animations && cp -r node_modules/tippy.js/animations/* dist/tippy.js/animations",
+    "dist": "npm install && npm run dist:js && npm run dist:css"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "@tensorflow-models/body-pix": "^2.1.0",
+    "@tensorflow/tfjs": "^3.4.0",
+    "jquery": "^3.5.1",
+    "tippy.js": "^6.3.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-rename": "^2.0.0"
+  }
+}
